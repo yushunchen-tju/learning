@@ -9,3 +9,4 @@ python tools/test.py \
     --res_dir work_dirs/ \
     --batch_size 16 \
     --ex_name "$EX_NAME"  \
+    \--model_name PredFormer_TSST \
