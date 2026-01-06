@@ -1,0 +1,17 @@
+# .gitattributes 基础模板
+* text=auto
+
+# 统一使用 LF 换行符（跨平台推荐）
+* text eol=lf
+
+# 二进制文件标记
+*.png binary
+*.jpg binary
+*.zip binary
+*.pdf binary
+*.h5 binary
+*.pt binary
+
+# 脚本文件特殊处理
+*.sh text eol=lf
+*.bat text eol=crlf
