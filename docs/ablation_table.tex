@@ -1,0 +1,26 @@
+
+\begin{table*}[t]
+\centering
+\caption{Ablation Study of FFT Pathformer Components. We systematically evaluate the contribution 
+of each component by removing or replacing it. The full model serves as the baseline. 
+Params: number of parameters (M), GFLOPs: computational complexity, Time: inference time (ms).}
+\label{tab:ablation}
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Group} & \textbf{Variant} & \textbf{Params (M)} & \textbf{GFLOPs} & \textbf{Time (ms)} & \textbf{Accuracy} \\
+\midrule
+\multirow{1}{*}{Baseline} & Full Model & 2.34 & -- & -- & -- \\
+\midrule
+\multirow{2}{*}{Component} & Without Spectral SE & 2.33 & -- & -- & -- \\
+ & Without Spectral Selector & 2.34 & -- & -- & -- \\
+\midrule
+\multirow{2}{*}{Routing} & Spatial Router & 2.34 & -- & -- & -- \\
+ & Uniform Router & 2.30 & -- & -- & -- \\
+\midrule
+\multirow{1}{*}{Architecture} & Single Scale & 0.98 & -- & -- & -- \\
+\midrule
+\multirow{2}{*}{Efficiency} & Without Sparsity & 2.30 & -- & -- & -- \\
+ & Without Depthwise Separable Conv & 46.20 & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}
